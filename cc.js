@@ -23,5 +23,5 @@ Unlocks by Cuttlefish 公众号：墨鱼手记
 // @replaceValue      字段key替换之后的value
 // @/g                正则匹配时匹配多个key键值
 // ==/KeyExplain== 虫虫钢琴,收费谱子可以通过PDF打印获取 ，直接点下载原谱无效
-var body = $response.body.replace(/is_vip":"0"/g, 'is_vip":"1"').replace(/"expire_date":""/g, '"expire_date":"1651248000"').replace(/"paytype":"3"/g, '"paytype":"0"').replace(/"sale_price":"\d+\.\d+"/g, '"sale_price":""').replace(/vip_expire_date":""/g, 'vip_expire_date":"1651248000"').replace(/has_buy":"0"/g, 'has_buy":"1"');
+var body = $response.body.replace(/is_vip":"0"/g, 'is_vip":"1"').replace(/"expire_date":""/g, '"expire_date":"1651248000"').replace(/"paytype":"3"/g, '"paytype":"0"').replace(/"sale_price":"\d+\.\d+"/g, '"sale_price":"0"').replace(/vip_expire_date":""/g, 'vip_expire_date":"1651248000"').replace(/has_buy":"0"/g, 'has_buy":"1"');
 $done({ body });
