@@ -23,7 +23,7 @@
 // @originalValue     字段key对应的原始value
 // @replaceValue      字段key替换之后的value
 // @/g                正则匹配时匹配多个key键值
-// ==/KeyExplain==
+// ==/KeyExplain== 收费文章正确，首页广告未免、不能使用FM.
 var body = $response.body.replace(/isPay = document/g, 'isPay = 1;  #').replace(/articleProperties/g, 'articleProperties2');
 //var body = $response.body.replace(/isPay = document/g, 'isPay = 1;  #')
 $done({ body });
