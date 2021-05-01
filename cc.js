@@ -24,5 +24,4 @@ Unlocks by Cuttlefish 公众号：墨鱼手记
 // @/g                正则匹配时匹配多个key键值
 // ==/KeyExplain== 虫虫钢琴
 var body = $response.body.replace(/is_vip":"0"/g, 'is_vip":"1"').replace(/vip_expire_date":""/g, 'vip_expire_date":"20211111"').replace(/has_buy":"0"/g, 'has_buy":"1"');
-//var body = $response.body.replace(/isPay = document/g, 'isPay = 1;  #')
 $done({ body });
