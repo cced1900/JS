@@ -28,5 +28,5 @@ Unlocks by Cuttlefish 公众号：墨鱼手记
 //$done({ body });
 //var body = $response.body.replace(/"isbuy":\w+/g, '"isbuy":true').replace(/"member_type": \d/g, '"member_type": 5').replace(/cnt_mode":"\w+"/g, 'cnt_mode" : "free"');
 //var body = $response.body.replace(/"member_type": \d/g, '"member_type": 5').replace(/cnt_mode":"\w+"/g, 'cnt_mode" : "free"').replace(/cnt_comment_count" : \d/g, 'cnt_comment_count" : 0');
-var body = $response.body.replace(/cnt_mode":"\w+"/g, 'cnt_mode" : "free"');
+var body = $response.body.replace(/cnt_mode" : "\w+"/g, 'cnt_mode" : "free"').replace(/is_free" : 0/g, 'is_free" : 1').replace(/"isbuy" : false/g, '"isbuy" : true');
 $done({ body });
