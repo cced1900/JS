@@ -24,5 +24,5 @@
 // @replaceValue      字段key替换之后的value
 // @/g                正则匹配时匹配多个key键值
 // ==/KeyExplain== VUE Vlog解锁会员.json 转换 for pm936
-var body = $response.body.replace(/"isCustomized":\w+/g, '"isCustomized":true').replace("isPremium":\w+/g, '"isPremium":true').replace("active":\w+/g, '"active":true');
+var body = $response.body.replace(/"isCustomized":false/g, '"isCustomized":true').replace("isPremium":false/g, '"isPremium":true').replace("valid":false/g, '"valid":true').replace("active":false/g, '"active":true');
 $done({ body });
